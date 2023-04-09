@@ -4,55 +4,50 @@ padding: 0;
 font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar {
-    background: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    top: 0;
-}
+/* ---------- START OF NAVBAR CSS ---------- */
 
 .navbar-container {
+    background-color: grey;
     display: flex;
-    justify-content:space-between;
-    height: 80px;
-    width: 100%;
-    border: solid 1px white;
-    
-    /*background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 48%, rgba(0,212,255,1) 85%);
-    */
-}
-
-.navbar-menu {
-    display: flex;
-    align-items: center;
     list-style: none;
-    text-align: center;
+    flex-flow: row wrap;
+    justify-content:space-between;
     width: 100%;
-    justify-content: space-around;
-    
+    border: solid 1px black;
+   
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 48%, rgba(0,212,255,1) 85%);
+   
 }
 
 .navbar-item {
-    height: 100%;
-    width: 100%;
-    border: solid 1px black;
+    flex: 1;
+    padding: 0;
+    width: 200px;
+    height: 100px;
+    
 }
 
 .navbar-links {
-    color: whitesmoke;
+    color: black;
     display: flex;
     align-items:center;
-    text-decoration: none;
+    text-decoration:none;
     padding: 0 1rem;
     height: 100%;
     font-size: large;
+    
+}
+
+#link-home {
+    background-image: url(images/home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #link-spain {
-    background-image: url(images/spain2.png);
+    background-image: url(images/spain.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -60,7 +55,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 #link-japan {
-    background-image: url(images/japan2.jpg);
+    background-image: url(images/japan2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -72,3 +67,54 @@ font-family: Arial, Helvetica, sans-serif;
     background-size: cover;
     background-position: center;
 }
+
+#link-cuban {
+    background-image: url(images/cuban.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#link-puerto {
+    background-image: url(images/prico.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media all and (max-width: 800px) {
+    .navbar-container {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .navbar-container a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid yellow;
+    }
+
+    .navbar-container li:last-of-type a {
+        border-bottom: none;
+    }
+    .navbar-item {
+        width: 100%;
+    }
+
+    .navbar-links {
+        background-image: none;
+        background-color: grey;
+    }
+
+    #link-home {
+        background-image: none;
+        background-color: grey;
+    }
+
+    #link-japan {
+        background-image: none;
+        background-color: grey;
+    }
+}
+
+/* ---------- END OF NAVBAR CSS ---------- */
