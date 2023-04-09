@@ -1,0 +1,74 @@
+* {
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    top: 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content:space-between;
+    height: 80px;
+    width: 100%;
+    border: solid 1px white;
+    
+    /*background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 48%, rgba(0,212,255,1) 85%);
+    */
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+.navbar-item {
+    height: 100%;
+    width: 100%;
+    border: solid 1px black;
+}
+
+.navbar-links {
+    color: whitesmoke;
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    font-size: large;
+}
+
+#link-spain {
+    background-image: url(images/spain2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#link-japan {
+    background-image: url(images/japan2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#link-cajun {
+    background-image: url(images/cajun1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
