@@ -21,18 +21,17 @@ font-family: Arial, Helvetica, sans-serif;
     width: 200px;
     height: 70px;
     border-right: solid 1px black;
-    
 }
 
 .navbar-links {
-    color: black;
+    color:black;
     display: flex;
     align-items:center;
     text-decoration:none;
     padding: 0 1rem;
     height: 100%;
-    font-size: large;
-    
+    font-size: 20px;
+    font-weight:bold;
 }
 
 #link-home {
@@ -72,7 +71,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 #link-puerto {
-    background-image: url(images/prico.png);
+    background-image: url(images/prico2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -87,7 +86,7 @@ font-family: Arial, Helvetica, sans-serif;
     .navbar-container a {
         text-align: center;
         padding: 10px;
-        border-top: 1px solid yellow;
+        border-top: 1px solid grey;
     }
 
     .navbar-container li:last-of-type a {
@@ -99,18 +98,49 @@ font-family: Arial, Helvetica, sans-serif;
 
     .navbar-links {
         background-image: none;
-        background-color: grey;
+        background-color: rgb(37, 37, 37);
     }
 
     #link-home {
         background-image: none;
-        background-color: grey;
+        background-color: rgb(37, 37, 37);
     }
 
     #link-japan {
         background-image: none;
-        background-color: grey;
+        background-color: rgb(37, 37, 37);
     }
 }
 
 /* ---------- END OF NAVBAR CSS ---------- */
+
+/* ---------- START OF HERO CSS ---------- */
+
+.hero {
+    width: 100vw;
+    height: 50vh;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/hero1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 6em;
+    color: orange;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+}
+
+.hero p {
+    padding-top: 30px;
+    color: burlywood;
+    text-align: center;
+}
+
+/* ---------- END OF HERO CSS ---------- */
