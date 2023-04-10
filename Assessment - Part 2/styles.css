@@ -4,6 +4,12 @@ padding: 0;
 font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background: rgb(236,237,217);
+    background: linear-gradient(90deg, rgba(236,237,217,1) 45%, rgba(219,167,117,1) 100%);
+
+}
+
 /* ---------- START OF NAVBAR CSS ---------- */
 
 .navbar-container {
@@ -24,14 +30,15 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar-links {
-    color:black;
+    color: black;
     display: flex;
     align-items:center;
     text-decoration:none;
-    padding: 0 1rem;
+    padding-left: 40px;
     height: 100%;
     font-size: 20px;
     font-weight:bold;
+    
 }
 
 #link-home {
@@ -86,7 +93,7 @@ font-family: Arial, Helvetica, sans-serif;
     .navbar-container a {
         text-align: center;
         padding: 10px;
-        border-top: 1px solid grey;
+        border-top: 1px solid rgb(0, 0, 0);
     }
 
     .navbar-container li:last-of-type a {
@@ -98,17 +105,20 @@ font-family: Arial, Helvetica, sans-serif;
 
     .navbar-links {
         background-image: none;
-        background-color: rgb(37, 37, 37);
+        background: rgb(236,237,217);
+        background: linear-gradient(90deg, rgba(236,237,217,1) 45%, rgba(219,167,117,1) 100%);
     }
 
     #link-home {
         background-image: none;
-        background-color: rgb(37, 37, 37);
+        background: rgb(236,237,217);
+        background: linear-gradient(90deg, rgba(236,237,217,1) 45%, rgba(219,167,117,1) 100%);
     }
 
     #link-japan {
         background-image: none;
-        background-color: rgb(37, 37, 37);
+        background: rgb(236,237,217);
+        background: linear-gradient(90deg, rgba(236,237,217,1) 45%, rgba(219,167,117,1) 100%);
     }
 }
 
@@ -119,7 +129,6 @@ font-family: Arial, Helvetica, sans-serif;
 .hero {
     width: 100vw;
     height: 50vh;
-    border: solid 1px black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,8 +148,88 @@ font-family: Arial, Helvetica, sans-serif;
 
 .hero p {
     padding-top: 30px;
+    padding-bottom: 20px;
     color: burlywood;
     text-align: center;
 }
 
+@media all and (max-width: 800px) {
+.hero-text {
+    font-size: small;
+}
+
+}
+
 /* ---------- END OF HERO CSS ---------- */
+
+/* ---------- START OF INTRO CSS ---------- */
+
+.intro {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.intro-item {
+    flex: 1;
+}
+
+.aside-1 {
+    padding: 10px;
+    flex: 1;
+}
+
+@media all and (max-width: 1100px) {
+    .intro {
+        flex-flow: column wrap;
+    }
+
+    .intro-item {
+        
+        width: 100%;
+    }
+
+    .aside-1 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+/* ---------- END OF INTRO CSS ---------- */
+
+/* ---------- START OF FOOTER CSS ---------- */
+
+.footer {
+display: flex;
+flex-flow: row wrap;
+padding: 10px;
+width: 100%;
+}
+
+.footer-h1 {
+    flex: 1;
+    text-align: center;
+    color: orange;
+    font-size: 2rem;
+}
+
+
+/* ---------- END OF FOOTER CSS ---------- */
+
+/* ---------- START OF BUTTON CSS ---------- */
+
+.button-container {
+    display: flex;
+    flex-flow: row wrap;
+    border: solid 1px black;
+    width: 100%;
+    justify-content: center;
+}
+
+.button {
+    padding: 30px;
+    margin: 10px 50px;
+    }
+
+ /* ---------- END OF BUTTON CSS ---------- */
