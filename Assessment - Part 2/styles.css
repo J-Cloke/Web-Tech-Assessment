@@ -99,6 +99,7 @@ body {
     .navbar-container li:last-of-type a {
         border-bottom: none;
     }
+    
     .navbar-item {
         width: 100%;
     }
@@ -115,11 +116,27 @@ body {
         background: linear-gradient(90deg, rgba(236,237,217,1) 45%, rgba(219,167,117,1) 100%);
     }
 
+    #link-home:hover {
+        background-color: #FEE140;
+        background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    }
+
     #link-japan {
         background-image: none;
         background: rgb(236,237,217);
         background: linear-gradient(90deg, rgba(236,237,217,1) 45%, rgba(219,167,117,1) 100%);
     }
+
+    #link-japan:hover {
+        background-color: #FEE140;
+        background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    }
+
+    .navbar-links:hover {
+        background-color: #FEE140;
+        background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    }
+
 }
 
 /* ---------- END OF NAVBAR CSS ---------- */
@@ -212,6 +229,7 @@ width: 100%;
     text-align: center;
     color: orange;
     font-size: 2rem;
+    margin-top: 20px;
 }
 
 
@@ -222,16 +240,25 @@ width: 100%;
 .button-container {
     display: flex;
     flex-flow: row wrap;
-    border: solid 1px black;
     width: 100%;
     justify-content: center;
-    background: rgb(236,237,217);
-    background: linear-gradient(90deg, rgba(236,237,217,1) 10%, rgba(219,167,117,1) 34%, rgba(0,0,0,1) 87%);
+    margin-top: 10px;
 }
 
 .button {
     padding: 30px;
     margin: 10px 50px;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    font-size: large;
+    font-style: italic;
     }
+
+    .button:hover {
+        background-color: #FEE140;
+        background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+
+    }
+
 
  /* ---------- END OF BUTTON CSS ---------- */
