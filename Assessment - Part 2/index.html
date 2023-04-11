@@ -55,17 +55,19 @@
             </aside>
     </section>
 
-    <section class="footer">
-        <h1 class="footer-h1">Ready To Get Started?</h1>
-    </section>
-
-    <div class="button-container">
-        <button class="button">Spanish Food</button>
-        <button class="button">Japanese Food</button>
-        <button class="button">Cajun Food</button>
-        <button class="button">Cuban Food</button>
-        <button class="button">Puerto Rican Food</button>
+    <div class="banner">
+        <div class ="content">
+            <h1>A short video on food from around the world</h1>
+            
+            <a href="#" onclick="toggle();">Watch Video</a>
+            <p>Pause the video before closing!! Alternatively reopen and pause to stop playback!!</p>
+        </div>
     </div>
-   
+    <div class="video">
+        <video src="images/"
+        controls="true"></video>
+        <img src="images/close.png" class="close" onclick="toggle(); video.pause()">
+    </div>
+    <script src="food.js"></script>
 </body>
 </html>
