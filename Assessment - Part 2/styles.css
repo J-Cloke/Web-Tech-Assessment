@@ -251,7 +251,7 @@ width: 100%;
 .banner {
     position: relative;
     width: 100%;
-    min-height: 50vh;
+    min-height: 20vh;
     display: flex;
     justify-content: center;
     background: rgb(245,213,198);
