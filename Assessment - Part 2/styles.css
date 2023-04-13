@@ -15,7 +15,7 @@ body {
     display: flex;
     list-style: none;
     flex-flow: row wrap;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 100%;
     border-bottom: solid 1px black;
 }
@@ -360,4 +360,123 @@ opacity: 1;
     }
 
  /* ---------- END OF BUTTON CSS ---------- */
+
+/* ---------- START OF RECIPE HEADER CSS ---------- */
+
+.recipe-header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+}
+
+.recipe-h1 {
+    font-size: 2.5em;
+    padding: 10px;
+}
+
+.recipe-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* ---------- END OF RECIPE HEADER CSS ---------- */
+
+/* ---------- START OF RECIPE INTRO CSS ---------- */
+
+.recipe-intro {
+    display: flex;
+    max-height: 100%;
+    max-width: 100%;
+    padding-top: 20px;
+}
+
+.recipe-item {
+    flex: 1;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+.aside-3 {
+    flex: 1;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 10px 15px;
+}
+
+@media all and (max-width: 1400px) {
+    .recipe-intro {
+        flex-flow: column wrap;
+    }
+
+    .recipe-item {
+        width: 100%;
+    }
+
+}
+/* ---------- END OF RECIPE INTRO CSS ---------- */
+
+/* ---------- START OF RECIPE SECTION CSS ---------- */
+
+.recipe-section {
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+    height: 50vh;
+}
+
+.ingredients {
+    border: solid 1px white;
+    flex: 1;
+    padding: 10px;
+    width: 50vw;
+}
+
+#ingredient-head {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+#ingredient-cat {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#ingredient-cat1 {
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.ingredient-list {
+    padding: 2px;
+    margin-top: 5px;
+}
+
+.aside-2 {
+    flex: 1;
+    border: solid 1px crimson;
+}
+
+.aside-2 h2 {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+@media all and (max-width: 1400px) {
+    .recipe-section {
+        flex-flow: column wrap;
+    }
+
+    .ingredients {
+        width: 100%;
+    }
+
+
+/* ---------- END OF RECIPE SECTION CSS ---------- */
 
