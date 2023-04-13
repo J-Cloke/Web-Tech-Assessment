@@ -382,6 +382,10 @@ opacity: 1;
     padding: 10px;
 }
 
+.recipe-name h2 {
+    text-decoration: underline;
+}
+
 /* ---------- END OF RECIPE HEADER CSS ---------- */
 
 /* ---------- START OF RECIPE INTRO CSS ---------- */
@@ -428,10 +432,10 @@ opacity: 1;
 }
 
 .ingredients {
-    border: solid 1px white;
+    border: solid 2px black;
     flex: 1;
     padding: 10px;
-    width: 50vw;
+    width: 100%;
 }
 
 #ingredient-head {
@@ -456,27 +460,26 @@ opacity: 1;
     margin-top: 5px;
 }
 
-.aside-2 {
+.aside-5 {
     flex: 1;
-    border: solid 1px crimson;
+    border-top: solid 2px black;
 }
 
-.aside-2 h2 {
-    font-size: 1.75em;
-    font-weight: bold;
+.aside-5 h2 {
     text-decoration: underline;
-    padding: 10px;
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 1.75em;
 }
 
-@media all and (max-width: 1400px) {
-    .recipe-section {
-        flex-flow: column wrap;
-    }
+.aside-5 h3 {
+    text-decoration: underline;
+    padding: 10px 15px;
+}
 
-    .ingredients {
-        width: 100%;
-    }
-
+.aside-5 p {
+    padding: 5px 15px;
+}
 
 /* ---------- END OF RECIPE SECTION CSS ---------- */
 
