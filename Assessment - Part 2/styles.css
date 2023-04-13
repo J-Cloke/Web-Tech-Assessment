@@ -358,6 +358,10 @@ opacity: 1;
         background-color: #FEE140;
         background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
     }
+    .button-container p {
+        margin-top: 30px;
+        padding: 25px;
+    }
 
  /* ---------- END OF BUTTON CSS ---------- */
 
