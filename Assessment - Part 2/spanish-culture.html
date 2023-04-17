@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spanish Culture</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="food.js"></script>
 </head>
 <body>
     <nav>
@@ -30,6 +31,13 @@
             </li>
         </ul>
    </nav>
+
+   <audio src="images/spain-anthem.mp3" id="spanish-audio"></audio>
+   <script type="text/javascript">
+        window.onload=function() {
+            document.getElementById("spanish-audio").play();
+        }
+   </script>
 
    <section class="intro">
     <img class="intro-item" src="images/spain-culture.png">

@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" type="text/css">
     <title>Puerto Rican Culture</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <nav>
         <ul class="navbar-container">
@@ -30,6 +32,14 @@
             </li>
         </ul>
    </nav>
+
+   <audio src="images/puerto-audio.mp3" id="puerto-audio"></audio>
+   <script type="text/javascript">
+        window.onload=function() {
+            document.getElementById("puerto-audio").play();
+        }
+   </script>
+   <script src="food.js"></script>
 
    <section class="intro">
     <img class="intro-item" src="images/puerto-culture.png">
@@ -63,8 +73,8 @@
 </section>
 
 <div class="button-container">
-    <p><a class="button" href="#"> Main Recipe</a></p>
-    <p><a class="button" href="#"> Dessert Recipe</a></p>
+    <p><a class="button" href="puerto-main.html"> Main Recipe</a></p>
+    <p><a class="button" href="puerto-dessert.html"> Dessert Recipe</a></p>
 </div>
 
 </body>
