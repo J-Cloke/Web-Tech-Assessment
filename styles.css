@@ -1,0 +1,663 @@
+* {
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: rgb(245,213,198);
+    background: linear-gradient(90deg, rgba(245,213,198,1) 11%, rgba(250,163,126,1) 75%);
+}
+
+/* ---------- START OF NAVBAR CSS ---------- */
+
+.navbar-container {
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: solid 1px black;
+}
+
+.navbar-item {
+    flex: 1;
+    padding: 0;
+    width: 200px;
+    height: 70px;
+    border-right: solid 1px black;
+}
+
+.navbar-links {
+    color: black;
+    display: flex;
+    align-items:center;
+    text-decoration:none;
+    padding-left: 40px;
+    height: 100%;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+#link-home {
+    background-image: url(images/home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#link-spain {
+    background-image: url(images/spain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#link-japan {
+    background-image: url(images/japan2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#link-cajun {
+    background-image: url(images/cajun1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#link-cuban {
+    background-image: url(images/cuban.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#link-puerto {
+    background-image: url(images/prico2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media all and (max-width: 800px) {
+    .navbar-container {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .navbar-container a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgb(0, 0, 0);
+    }
+
+    .navbar-container li:last-of-type a {
+        border-bottom: none;
+    }
+    
+    .navbar-item {
+        width: 100%;
+    }
+
+    .navbar-links {
+        background-image: none;
+        background: rgb(236,237,217);
+        background: linear-gradient(90deg, rgba(236,237,217,1) 45%, rgba(219,167,117,1) 100%);
+    }
+
+    #link-home {
+        background-image: none;
+        background: rgb(236,237,217);
+        background: linear-gradient(90deg, rgba(236,237,217,1) 45%, rgba(219,167,117,1) 100%);
+    }
+
+    #link-home:hover {
+        background-color: #FEE140;
+        background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    }
+
+    #link-japan {
+        background-image: none;
+        background: rgb(236,237,217);
+        background: linear-gradient(90deg, rgba(236,237,217,1) 45%, rgba(219,167,117,1) 100%);
+    }
+
+    #link-japan:hover {
+        background-color: #FEE140;
+        background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    }
+
+    .navbar-links:hover {
+        background-color: #FEE140;
+        background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    }
+
+}
+
+/* ---------- END OF NAVBAR CSS ---------- */
+
+/* ---------- START OF HERO CSS ---------- */
+
+.hero {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/hero1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 6em;
+    color: orange;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+}
+
+.hero p {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: burlywood;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media all and (max-width: 800px) {
+.hero-text {
+    font-size:small;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.3em;
+    font-weight:  bold;
+}
+
+}
+
+/* ---------- END OF HERO CSS ---------- */
+
+/* ---------- START OF INTRO CSS ---------- */
+
+.intro {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.intro-item {
+    flex: 1;
+    padding-left: 2px;
+}
+
+.aside-1 {
+    padding: 20px;
+    flex: 1;
+    margin-top: 50px;
+    font-size: 23px;
+    color: black;
+    text-align: left;
+}
+
+@media all and (max-width: 1400px) {
+    .intro {
+        flex-flow: column wrap;
+    }
+
+    .intro-item {
+        width: 100%;
+    }
+
+    .aside-1 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: solid 1px black;
+    }
+}
+
+/* ---------- END OF INTRO CSS ---------- */
+
+/* ---------- START OF FOOTER CSS ---------- */
+
+.footer {
+display: flex;
+flex-flow: row wrap;
+padding: 10px;
+width: 100%;
+}
+
+.footer-h1 {
+    flex: 1;
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+/* ---------- END OF FOOTER CSS ---------- */
+
+/* ---------- START OF VIDEO CSS ---------- */
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    background: rgb(245,213,198);
+    background: linear-gradient(90deg, rgb(253, 193, 166) 11%, rgb(255, 146, 99) 75%);
+}
+
+.video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10000;
+    width: 100%;
+    height:100%;
+    background:rgb(0, 0, 0,0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.video.active {
+visibility: visible;
+opacity: 1;
+}
+
+.video video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    max-width: 32px;
+    filter: invert(1);
+}
+
+@media (max-width: 991px) {
+    .video video {
+        max-width: 90%;
+    }
+}
+
+.content {
+    padding-left: 15px;
+}
+.content h1 {
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.content h2 {
+    color: black;
+    font-size: 1.2em;
+    margin: 15px 0 25px;
+}
+
+.content a {
+    text-transform: uppercase;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    border: 1px solid black;
+    padding: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+.content p {
+    padding: 20px 0px;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+/* ---------- END OF VIDEO CSS ---------- */
+
+/* ---------- START OF BUTTON CSS ---------- */
+
+.button-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 30px;
+    margin: 10px 50px;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    font-size: large;
+    font-style: italic;
+    }
+
+    .button:hover {
+        background-color: #FEE140;
+        background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    }
+    .button-container p {
+        margin-top: 20px;
+        padding: 25px;
+    }
+
+ /* ---------- END OF BUTTON CSS ---------- */
+
+/* ---------- START OF RECIPE HEADER CSS ---------- */
+
+.recipe-header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+}
+
+.recipe-h1 {
+    font-size: 2.5em;
+    padding: 10px;
+}
+
+.recipe-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.recipe-name h2 {
+    text-decoration: underline;
+}
+
+/* ---------- END OF RECIPE HEADER CSS ---------- */
+
+/* ---------- START OF RECIPE INTRO CSS ---------- */
+
+.recipe-intro {
+    display: flex;
+    max-height: 100%;
+    max-width: 100%;
+    padding-top: 20px;
+}
+
+.recipe-item {
+    flex: 1;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+.aside-3 {
+    flex: 1;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 10px 15px;
+    border: solid 1px black;
+}
+
+@media all and (max-width: 1400px) {
+    .recipe-intro {
+        flex-flow: column wrap;
+    }
+
+    .recipe-item {
+        width: 100%;
+    }
+
+}
+/* ---------- END OF RECIPE INTRO CSS ---------- */
+
+/* ---------- START OF RECIPE SECTION CSS ---------- */
+
+.recipe-section {
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+    height: 50vh;
+}
+
+.ingredients {
+    border: solid 2px black;
+    flex: 1;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+#ingredient-head {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+#ingredient-cat {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#ingredient-cat1 {
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.ingredient-list {
+    padding: 2px;
+    margin-top: 5px;
+}
+
+.aside-5 {
+    flex: 1;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+
+.aside-5 h2 {
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 1.75em;
+}
+
+.aside-5 h3 {
+    text-decoration: underline;
+    padding: 10px 15px;
+}
+
+.aside-5 p {
+    padding: 5px 15px;
+}
+
+@media all and (max-width:1400px) {
+    .aside-5 {
+        border-left: solid 2px black;
+        border-right: solid 2px black;
+    }
+}
+
+/* ---------- END OF RECIPE SECTION CSS ---------- */
+
+/* ---------- START OF CULTURE CSS ---------- */
+
+.hero1 {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-image: url(images/spain-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    text-align: center;
+}
+
+.hero1 h1 {
+    font-size: 6em;
+    color: black;
+    font-weight: 700;
+}
+
+.hero1 p {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: burlywood;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media all and (max-width: 800px) {
+.hero1-text {
+    font-size:small;
+}
+
+.hero1 h1 {
+    font-size: 3em;
+}
+
+.hero1 p {
+    font-size: 1.3em;
+    font-weight:  bold;
+}
+
+}
+
+.hero2 {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-image: url(images/japan-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    text-align: center;
+}
+
+.hero2 h1 {
+    font-size: 6em;
+    color: black;
+    font-weight: 700;
+}
+
+@media all and (max-width: 800px) {
+    .hero2-text {
+        font-size:small;
+    }
+    
+    .hero2 h1 {
+        font-size: 3em;
+    }
+}
+
+.hero3 {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-image: url(images/cajun-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    text-align: center;
+}
+
+.hero3 h1 {
+    font-size: 6em;
+    color: black;
+    font-weight: 700;
+}
+
+@media all and (max-width: 800px) {
+    .hero3-text {
+        font-size:small;
+    }
+    
+    .hero3 h1 {
+        font-size: 3em;
+    }
+}
+
+.hero4 {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-image: url(images/cuban-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    text-align: center;
+}
+
+.hero4 h1 {
+    font-size: 6em;
+    color: black;
+    font-weight: 700;
+}
+
+@media all and (max-width: 800px) {
+    .hero4-text {
+        font-size:small;
+    }
+    
+    .hero4 h1 {
+        font-size: 3em;
+    }
+}
+
+.hero5 {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-image: url(images/puerto-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    text-align: center;
+}
+
+.hero5 h1 {
+    font-size: 6em;
+    color: black;
+    font-weight: 700;
+}
+
+@media all and (max-width: 800px) {
+    .hero5-text {
+        font-size:small;
+    }
+    
+    .hero5 h1 {
+        font-size: 3em;
+    }
+}
+
+
+/* ---------- END OF CULTURE HERO CSS ---------- */
